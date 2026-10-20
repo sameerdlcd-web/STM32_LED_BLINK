@@ -10,7 +10,7 @@ int main(void)
     *RCCAHB1 |= (1 << 0);
 
     // 2. Clear PA5 mode bits
-    *mode_r &= ~(0x3 << 10);
+    *mode_r &= ~(3 << 10);
 
     // 3. Set PA5 as output
     *mode_r |= (1 << 10);
